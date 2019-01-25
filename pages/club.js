@@ -8,16 +8,16 @@ const Club = (props) => (
       <div className="container">
         <div className="columns">
           <div className="column is-half">
-            <h1 className="title has-text-weight-bold"> Penn Coffe Club </h1>
+            <h1 className="title has-text-weight-bold"> Penn Coffee Club </h1>
             <p className="subtitle">
-              We are a club about coffee -- our events usually center around drinking, tasting, and brewing the caffeinated drink. 
+              We are a club about coffee -- our events usually center around drinking, tasting, and brewing the caffeinated drink.
             </p>
             <img src="https://static1.squarespace.com/static/5739ee887da24fc27bc8933f/t/5828c97fcd0f681af51723ff/1479068040846/2.jpg?format=2500w"/>
             <br /> <br />
             <p>
             Coffee is used as a medium for social interaction. We use that crucial trait, building low-stress environments for positive social interaction.
             Penn is a hyper-motivated and high pressure environment, where too often students fail to invest time in self-care. At this "work hard/play hard" school, not enough emphasis is placed on spontaneous conversation. We try to create, foster, and inhabit a space to fill that void.
-            </p>           
+            </p>
           </div>
           <div className="column is-half">
             <br /> <br />
@@ -58,13 +58,13 @@ const Club = (props) => (
                   </div>
                 </div>
                 <br />
-                <a className="button"> Website </a> <a className="button"> Email </a> 
+                <a className="button"> Website </a> <a className="button"> Email </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>    
+    </section>
   </div>
 );
 

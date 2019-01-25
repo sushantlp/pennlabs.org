@@ -7,6 +7,7 @@ class Header extends React.Component {
     super(props);
     this.state = {
       isActive: false,
+      loggedIn: this.props.loggedIn,
     }
   }
 
@@ -35,8 +36,7 @@ class Header extends React.Component {
             <img
               src="/static/img/beaker-only.png"
               alt="Penn Labs"
-              width="auto"
-              height="100" />
+              width="auto" />
             </a>
             <button className="button navbar-burger is-info" onClick={this.toggleNav}>
               <span></span>
@@ -46,7 +46,7 @@ class Header extends React.Component {
           </div>
           <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
             <div className="navbar-start"></div>
-            <div className="navbar-end">
+            <div className="navbar-end" style={{ marginRight: "0.5rem"}}>
               <a className="navbar-item" href="/team">
                 Team
               </a>
@@ -58,6 +58,17 @@ class Header extends React.Component {
               </a>
               <a className="navbar-item" href="https://medium.com/@pennappslabs">
                 Blog
+              </a>
+              <a className="navbar-item" href="/account">
+                {this.state.loggedIn ? <i class="fas fa-user"></i> : (
+                  <Spring from={{ opacity: 0 }} to={{ opacity: 1, borderColor: "#209CEE", color: "#209CEE" }} delay={500} config={config.molasses}>
+                    {props => (
+                      <div style={props}>
+                      <a href="https://platform.pennlabs.org/accounts/login" style={{ maxHeight: 40 }} className="button is-info is-inverted"> Login </a>
+                      </div>
+                    )}
+                  </Spring>
+                )}
               </a>
             </div>
           </div>
