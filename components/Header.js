@@ -36,7 +36,7 @@ class Header extends React.Component {
             <img
               src="/static/img/beaker-only.png"
               alt="Penn Labs"
-              width="auto" />
+              width="auto"/>
             </a>
             <button className="button navbar-burger is-info" onClick={this.toggleNav}>
               <span></span>
